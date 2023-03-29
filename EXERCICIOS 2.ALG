@@ -1,7 +1,7 @@
-Algoritmo "EXERCICIOS 2"
-// Disciplina   : [Linguagem e LÛgica de ProgramaÁ„o]
-// Professor   : Antonio Carlos Nicolodi 
-// DescriÁ„o   : Aqui vocÍ descreve o que o programa faz! (funÁ„o)
+Algoritmo "EXERCICIOS 2"Algoritmo "EXERCICIOS 2"
+// Disciplina   : [Linguagem e L√≥gica de Programa√ß√£o]
+// Professor   : Antonio Carlos Nicolodi
+// Descri√ß√£o   : Aqui voc√™ descreve o que o programa faz! (fun√ß√£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 26/03/2023
 
@@ -9,16 +9,16 @@ Algoritmo "EXERCICIOS 2"
 //variaveis e depois as escreva
 
 //escreva um programa que leia dois numeros inteiros e imprima o resultado da
-//divis„o desses numeros com 2 casas decimais
+//divis√£o desses numeros com 2 casas decimais
 
 //escreva um programa que leia o raio de um circulo e imprima o diametro e a
 //area desse circulo
 
-//escreva um programa que leia trÍs notas de um aluno e calcule a mÈdia dessas
+//escreva um programa que leia tr√™s notas de um aluno e calcule a m√©dia dessas
 //notas
 
 //escreva um programa que leia o salario base de um vendedor, o percentual de
-//comiss„o e o total de vendas dele no mÍs, depois escreva qual foi o salario total dele
+//comiss√£o e o total de vendas dele no m√™s, depois escreva qual foi o salario total dele
 Var
    //#1
    nome: caracter
@@ -26,66 +26,73 @@ Var
    demaior: logico
    altura: real
    exercicio: inteiro
-   
+
    //#2
    valor1: inteiro
    valor2: inteiro
    divisor: real
    resultado: real
-   
+
    //#3
    raio: real
    diametro: real
    area: real
-   
+
    //#4
    matematica: real
    fisica: real
    quimica: real
    media: real
+   
+   //#5
+   salario: real
+   percentual: real
+   vendas: real
+   total: real
 
 Inicio
 exercicio:= 1
-escreval("Selecione o exercÌcio.")
+escreval("Selecione o exerc√≠cio.")
 escreval("1 - algoritmo dos 4 tipos de dados")
-escreval("2 - ler dois numeros e imprimir divis„o com 2 casas decimais")
+escreval("2 - ler dois numeros e imprimir divis√£o com 2 casas decimais")
 escreval("3 - ler o raio de um circulo e imprimir area e diametro")
-escreval("4 - ler trÍs notas de um aluno e calcular a mÈdia")
-escreval("5 - ler o salario base, o percentual de comiss„o e totala de vendas e imprimir salario total")
-escreval("Para sair do programa digite cualquer caracter diferente de n˙mero")
+escreval("4 - ler tr√™s notas de um aluno e calcular a m√©dia")
+escreval("5 - ler o salario base, o percentual de comiss√£o e totala de vendas e imprimir salario total")
+escreval("Para sair do programa digite cualquer caracter diferente de n√∫mero")
 
 enquanto (exercicio > 0) faca
 leia(exercicio)
          se (exercicio = 9) entao
          limpatela
-               escreval("Selecione o exercÌcio.")
+               escreval("Selecione o exerc√≠cio.")
                escreval("1 - algoritmo dos 4 tipos de dados")
-               escreval("2 - ler dois numeros e imprimir divis„o com 2 casas decimais")
+               escreval("2 - ler dois numeros e imprimir divis√£o com 2 casas decimais")
                escreval("3 - ler o raio de um circulo e imprimir area e diametro")
-               escreval("4 - ler trÍs notas de um aluno e calcular a mÈdia")
-               escreval("5 - ler o salario base, o percentual de comiss„o e totala de vendas e imprimir salario total")
-               escreval("Para sair do programa digite cualquer caracter diferente de n˙mero")
+               escreval("4 - ler tr√™s notas de um aluno e calcular a m√©dia")
+               escreval("5 - ler o salario base, o percentual de comiss√£o e totala de vendas e imprimir salario total")
+               escreval("Para sair do programa digite cualquer caracter diferente de n√∫mero")
          fimse
          //exercicio 1
          se (exercicio = 1) entao
             limpatela
-            escreva("Qual È seu nome?: ")
+            escreva("Qual √© seu nome?: ")
             leia(nome)
             limpatela
-            escreva("Qual È sua idade?: ")
+            escreva("Qual √© sua idade?: ")
             leia(idade)
             limpatela
             escreva("Qual a sua altura?: ")
             leia(altura)
             limpatela
-            escreval("Estas s„o suas informaÁıes:")
+            escreval("Estas s√£o suas informa√ß√µes:")
             escreval("NOME: ", nome)
             escreval("IDADE: ", idade)
             escreval("ALTURA: ", altura)
-            se (idade >= 18) entao
-               escreval("… MAIOR DE IDADE")
+            demaior:= idade >= 18
+            se (demaior = verdadeiro) entao
+               escreval("√â MAIOR DE IDADE")
             senao
-               escreval("N√O … MAIOR DE IDADE")
+               escreval("N√ÉO √â MAIOR DE IDADE")
             fimse
             escreval("")
             escreval("9 - voltar")
@@ -101,7 +108,7 @@ leia(exercicio)
               divisor:= 1.75
               limpatela
               resultado:= valor1/valor2 + divisor
-              escreval("O resultado da operaÁ„o matem·tica È: ")
+              escreval("O resultado da opera√ß√£o matem√°tica √©: ")
               escreval(valor1, " /", valor2, " +", divisor, " =", resultado)
               escreval("9 - voltar")
               escreva("")
@@ -112,10 +119,134 @@ leia(exercicio)
             escreva("Digite o raio do circulo: ")
             leia(raio)
             limpatela
-            escreval("O resultado da operaÁ„o È essa:")
+            escreval("O resultado da opera√ß√£o √© essa:")
             escreval("RAIO =", raio)
             escreval("DIAMETRO =", raio * 2)
-            escreval("¡REA =", PI * (raio^2))
+            escreval("√ÅREA =", PI * (raio^2))
+            escreval("")
+            escreval("9 - voltar")
+         fimse
+         //exercicio 4
+         se (exercicio = 4) entao
+            limpatela
+            escreva("Digite a nota de matematica: ")
+            leia(matematica)
+            enquanto (matematica > 10) ou (matematica < 0) faca
+            limpatela
+              escreva("Digite a nota de matematica (entre 1 e 10): ")
+              leia(matematica)
+            fimenquanto
+            limpatela
+            escreva("Digite a nota de fisica: ")
+            leia(fisica)
+            enquanto (fisica > 10) ou (fisica < 0) faca
+            limpatela
+              escreva("Digite a nota de fisica (entre 1 e 10): ")
+              leia(fisica)
+            fimenquanto
+            limpatela
+            escreva("Digite a nota de quimica: ")
+            leia(quimica)
+            enquanto (quimica > 10) ou (quimica < 0) faca
+            limpatela
+              escreva("Digite a nota de quimica (entre 1 e 10): ")
+              leia(quimica)
+            fimenquanto
+            limpatela
+            escreval("MATEMATICA:", matematica)
+            escreval("FISICA:", fisica)
+            escreval("QUIMICA:", quimica)
+            escreval("A MEDIA DESSAS NOTAS √â DE:", (matematica+fisica+quimica)/3)
+            escreval("")
+            escreval("9 - voltar")
+         fimse
+         //exercicio 5
+         se (exercicio = 5) entao
+            limpatela
+            escreva("Digite o salario base: ")
+            leia(salario)
+            limpatela
+            escreva("Digite o percentual de comiss√£o: ")
+            leia(percentual)
+            limpatela
+            escreva("Digite o total de vendas no mes: ")
+            leia(vendas)
+            limpatela
+            total:= (salario * (percentual * 0.01)) * vendas
+            escreval("Esse √© o resultado:")
+            escreval("SALARIO BASE:", salario)
+            escreval("PERCENTUAL DE COMISS√ÉO:", percentual, " %")
+            escreval("VENDAS NO M√äS:", vendas)
+            escreval("SALARIO TOTAL:", total)
+            escreval("")
+            escreval("9 - voltar")
+         fimse
+fimenquanto
+
+
+Fimalgoritmo
+enquanto (exercicio > 0) faca
+leia(exercicio)
+         se (exercicio = 9) entao
+         limpatela
+               escreval("Selecione o exerc√≠cio.")
+               escreval("1 - algoritmo dos 4 tipos de dados")
+               escreval("2 - ler dois numeros e imprimir divis√£o com 2 casas decimais")
+               escreval("3 - ler o raio de um circulo e imprimir area e diametro")
+               escreval("4 - ler tr√™s notas de um aluno e calcular a m√©dia")
+               escreval("5 - ler o salario base, o percentual de comiss√£o e totala de vendas e imprimir salario total")
+               escreval("Para sair do programa digite cualquer caracter diferente de n√∫mero")
+         fimse
+         //exercicio 1
+         se (exercicio = 1) entao
+            limpatela
+            escreva("Qual √© seu nome?: ")
+            leia(nome)
+            limpatela
+            escreva("Qual √© sua idade?: ")
+            leia(idade)
+            limpatela
+            escreva("Qual a sua altura?: ")
+            leia(altura)
+            limpatela
+            escreval("Estas s√£o suas informa√ß√µes:")
+            escreval("NOME: ", nome)
+            escreval("IDADE: ", idade)
+            escreval("ALTURA: ", altura)
+            se (idade >= 18) entao
+               escreval("√â MAIOR DE IDADE")
+            senao
+               escreval("N√ÉO √â MAIOR DE IDADE")
+            fimse
+            escreval("")
+            escreval("9 - voltar")
+         fimse
+         //exercicio 2
+         se (exercicio = 2) entao
+              limpatela
+              escreva("Digite o valor 1: ")
+              leia(valor1)
+              limpatela
+              escreva("Digite o valor 2: ")
+              leia(valor2)
+              divisor:= 1.75
+              limpatela
+              resultado:= valor1/valor2 + divisor
+              escreval("O resultado da opera√ß√£o matem√°tica √©: ")
+              escreval(valor1, " /", valor2, " +", divisor, " =", resultado)
+              escreval("9 - voltar")
+              escreva("")
+         fimse
+         //exercicio 3
+         se (exercicio = 3) entao
+            limpatela
+            escreva("Digite o raio do circulo: ")
+            leia(raio)
+            limpatela
+            escreval("O resultado da opera√ß√£o √© essa:")
+            escreval("RAIO =", raio)
+            escreval("DIAMETRO =", raio * 2)
+            escreval("√ÅREA =", PI * (raio^2))
             escreval("")
             escreval("9 - voltar")
          fimse
@@ -133,7 +264,7 @@ leia(exercicio)
             escreval("MATEMATICA:", matematica)
             escreval("FISICA:", fisica)
             escreval("QUIMICA:", quimica)
-            escreval("A MEDIA DESSAS NOTAS … DE:", (matematica+fisica+quimica)/3)
+            escreval("A MEDIA DESSAS NOTAS √â DE:", (matematica+fisica+quimica)/3)
             escreval("")
             escreval("9 - voltar")
          fimse
